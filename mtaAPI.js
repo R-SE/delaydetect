@@ -34,11 +34,6 @@ const MTA_MODEL = {
         }
         return data;
       })
-  },
-
-  // @return schedule info for one station on a single line letter
-  getStation: (stationName) => {
-
   }
 }
 
