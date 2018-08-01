@@ -22,7 +22,7 @@ const MTA_MODEL = {
     .then(res => res.schedule[stopId][direction]);
   },
 
-  //@return station schedule info for array of input stops on the given line
+  //@return station schedule info for input stop(s) on the given line
   getLine: (lineStopIds, lineName) => {
     return mta.schedule(lineStopIds, feedIds[lineName])
       .then(res => {
@@ -72,5 +72,5 @@ const OUTPUT_SAMPLE_DATA = {
 //   .then(res => console.log(JSON.stringify(res, null, 4)));
 // MTA_MODEL.getLine($1, '1')
 //   .then(res => console.log(JSON.stringify(res, null, 4)));
-// MTA_MODEL.getLine(['A31'], 'E')
+// MTA_MODEL.getLine('A31', 'E')
 //   .then(res => console.log(JSON.stringify(res, null, 4)));
